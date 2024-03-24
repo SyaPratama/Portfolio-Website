@@ -1,8 +1,8 @@
 #root{
-    --main-color: #635985;
-    --second-color:#443C68;
-    --third-color: #393053;
-    --fourth-color:#18122B;
+    --main-color: #525252;
+    --second-color:#414141;
+    --third-color: #313131;
+    --fourth-color:#B4B4B8;
     --white-color: #f8f8f8;
 }
 .navbar-container{
@@ -111,7 +111,7 @@
 
 .navbar-container .navigation .link .name-display{
     position: absolute;
-    background:  #393053;
+    background:  var(--fourth-color);
     width: 120px;
     display: flex;
     justify-content: center;
@@ -218,7 +218,7 @@
 
 .main .main-text .introduce span{
     font-size: 20px;
-    color:  #393053;
+    color:  var(--fourth-color);
 }
 
 .main .main-text .description{
@@ -246,11 +246,11 @@
     height: 35px;
     border-radius: 100%;
     font-size: 18px;
+    transition: background .6s ease-in-out;
 }
 
 .main .main-text .social-media .icon:hover{
-    transition: background .3s ease-in-out;
-    background: #4c4760c4;
+    background: var(--fourth-color);
 }
 
 .main .h1{
