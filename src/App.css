@@ -305,4 +305,8 @@
         width: 80%;
         font-size: 12px;
     }
+
+    .main .h1{
+        margin-left: 10%;
+    }
 }
