@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 /* eslint-disable react/prop-types */
 const PortfolioLayout = () => {
     return(
