@@ -9,13 +9,13 @@ Social Media Saya:
 
 # Documentation 
 
-<img src="public/docs/doc1.png">
+<img src="public/docs/docs1.png">
 
-<img src="public/docs/doc2.png">
+<img src="public/docs/docs2.png">
 
-<img src="public/docs/doc3.png">
+<img src="public/docs/docs3.png">
 
-<img src="public/docs/doc4.png">
+<img src="public/docs/docs4.png">
 
 # Copyright
 
