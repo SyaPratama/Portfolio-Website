@@ -263,6 +263,8 @@
 
 @media screen and (min-width:320px) and (max-width:768px){
     .navbar-container{
+        top: 0;
+        bottom: 0;
         width: 50px;
     }
     .navbar-container .my-profile .my-img{
