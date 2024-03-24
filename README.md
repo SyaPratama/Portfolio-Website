@@ -7,6 +7,13 @@ Social Media Saya:
 - [Instagram](https://www.instagram.com/hiyaaaaayam/) My Instagram
 - [Linkedin](https://www.linkedin.com/in/rasya-pratama-880bbb253/) My Linkedin
 
+# Documentation 
+
+<img src="/public/docs/doc1.png">
+<img src="/public/docs/doc2.png">
+<img src="/public/docs/doc3.png">
+<img src="/public/docs/doc4.png">
+
 # Copyright
 
 Copyright (&copy;) 2024 Rasya Putra Pratama and others
