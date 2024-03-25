@@ -63,6 +63,11 @@ const NavbarLayout = ({nav}) => {
                         <span className="link-name">About Me</span>
                         <div className='name-display'>About Me</div>
                     </Link>
+                    <Link to={"/Blog"} className="link">
+                        <i className="fa-solid fa-newspaper"></i>
+                        <span className="link-name">Blog</span>
+                        <div className='name-display'>Blog</div>
+                    </Link>
                     <Link to={"/Portfolio"} className="link">
                         <i className="fa-solid fa-briefcase"></i>
                         <span className="link-name">Portfolio</span>

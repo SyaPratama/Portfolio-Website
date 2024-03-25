@@ -6,6 +6,7 @@ import AboutLayout from './layouts/AboutLayout'
 import PortfolioLayout from './layouts/PortfolioLayout'
 import ContactLayout from './layouts/ContactLayout'
 import { useState } from 'react'
+import BlogLayout from './layouts/BlogLayout'
 
 const App = () => {
   const [navbar,setNavbar]= useState(null);
@@ -22,6 +23,7 @@ const App = () => {
             <Route path='About' element={<AboutLayout/>}/>
             <Route path='Portfolio' element={<PortfolioLayout/>}/>
             <Route path='Contact' element={<ContactLayout/>}/>
+            <Route path='Blog' element={<BlogLayout/>}/>
           </Route>
         </Routes>
     </BrowserRouter>
