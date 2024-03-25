@@ -18,11 +18,13 @@ const Home = ({nav,handle}) => {
     return(
     <>
         <NavbarLayout nav={nav}/>
+        <main className="main-container">
         <div className="container">
             <section className="main">
                <Outlet/>
             </section>
         </div>
+        </main>
     </>
     )
 }
