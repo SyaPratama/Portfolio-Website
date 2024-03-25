@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
-import me from '../assets/me.png';
+import me from '../assets/my-foto.png';
 import { useEffect } from 'react';
 
 const NavbarLayout = ({nav}) => {
@@ -64,7 +64,7 @@ const NavbarLayout = ({nav}) => {
                         <div className='name-display'>About Me</div>
                     </Link>
                     <Link to={"/Blog"} className="link">
-                        <i className="fa-solid fa-newspaper"></i>
+                    <i className="fa-solid fa-newspaper"></i>
                         <span className="link-name">Blog</span>
                         <div className='name-display'>Blog</div>
                     </Link>
@@ -79,10 +79,12 @@ const NavbarLayout = ({nav}) => {
                         <div className='name-display'>My Contact</div>
                     </Link>
                 </nav>
+               <Link to={"https://www.linkedin.com/in/rasya-pratama-880bbb253/"}>
                 <div className="my-profile">
                     <img src={me} alt="me" className='my-img' />
                     <span className='my-image-name'>Rasya Putra Pratama</span>
                 </div>
+                </Link>
             </div>
         </>
     )

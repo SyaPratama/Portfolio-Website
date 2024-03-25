@@ -146,6 +146,7 @@
 }
 
 .navbar-container .my-profile{
+    cursor: pointer;
     display: flex;
     gap: 5px;
     align-items: center;
@@ -154,7 +155,7 @@
 .navbar-container .my-profile .my-img{
     width: 40px;
     background: var(--white-color);
-    padding: 2px;
+    padding: 1px;
     border-radius: 10px;
 }
 
