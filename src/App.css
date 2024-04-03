@@ -225,7 +225,7 @@
 
 .main .main-text .introduce{
     font-size: 30px;
-    width: 55%;
+    width: 60%;
     color: var(--second-color);
 }
 
@@ -235,7 +235,7 @@
 }
 
 .main .main-text .description{
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--second-color);
     width: 55%;
