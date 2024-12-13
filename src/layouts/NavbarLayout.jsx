@@ -8,11 +8,11 @@ import axios from "axios";
 import fileDownload from 'js-file-download';
 
 const NavbarLayout = ({nav}) => {
-    const download = () => {
-        axios.get(`https://drive.google.com/file/d/1ZJqa0dgBXKbduoR1iIMWSsshyLAHR8yI/view?usp=drivesdk`,{
+    const download = async () => {
+        await axios.get(`https://drive.google.com/file/d/1ZJqa0dgBXKbduoR1iIMWSsshyLAHR8yI/view?usp=drivesdk`,{
             responseType: 'blob'
         }).then(res => {
-          fileDownload(res.data, "RasyaCV");
+          fileDownload(res.data, "mycv.pdf");
         })
     }
 
