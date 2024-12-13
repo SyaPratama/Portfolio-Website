@@ -4,8 +4,17 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import me from '../assets/my-foto.png';
 import { useEffect } from 'react';
+import axios from "axios";
+import fileDownload from 'js-file-download';
 
 const NavbarLayout = ({nav}) => {
+    const download = () => {
+        axios.get(`https://drive.google.com/file/d/1ZJqa0dgBXKbduoR1iIMWSsshyLAHR8yI/view?usp=drivesdk`,{
+            responseType: 'blob'
+        }).then(res => {
+          fileDownload(res.data, "RasyaCV.pdf");
+        })
+    }
 
     const openNavbar = () => {
         const link = document.querySelector('.navbar-container');
@@ -63,20 +72,15 @@ const NavbarLayout = ({nav}) => {
                         <span className="link-name">About Me</span>
                         <div className='name-display'>About Me</div>
                     </Link>
-                    <Link to={"/Blog"} className="link">
-                    <i className="fa-solid fa-newspaper"></i>
-                        <span className="link-name">Blog</span>
-                        <div className='name-display'>Blog</div>
-                    </Link>
                     <Link to={"/Portfolio"} className="link">
                         <i className="fa-solid fa-briefcase"></i>
                         <span className="link-name">Portfolio</span>
                         <div className='name-display'>Portfolio</div>
                     </Link>
-                    <Link to={"/Contact"} className="link">
-                        <i className="fa-solid fa-mobile"></i>
-                        <span className="link-name">My Contact</span>
-                        <div className='name-display'>My Contact</div>
+                    <Link onClick={download} className="link">
+                        <i className="fa-solid fa-file"></i>
+                        <span className="link-name">CV</span>
+                        <div className='name-display'>CV</div>
                     </Link>
                 </nav>
                <Link to={"https://www.linkedin.com/in/rasya-pratama-880bbb253/"}>
