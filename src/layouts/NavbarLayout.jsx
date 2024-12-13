@@ -9,10 +9,10 @@ import fileDownload from 'js-file-download';
 
 const NavbarLayout = ({nav}) => {
     const download = async () => {
-        await axios.get(`https://drive.google.com/file/d/1ZJqa0dgBXKbduoR1iIMWSsshyLAHR8yI/view?usp=drivesdk`,{
+        await axios.get(`https://git-link.vercel.app/api/download?url=https%3A%2F%2Fgithub.com%2FSyaPratama%2FMyCV%2Fblob%2Fmain%2FRasya.pdf&filename=Rasya.pdf`,{
             responseType: 'blob'
         }).then(res => {
-          fileDownload(res.data, "mycv.pdf");
+            fileDownload(res.data,"Rasya.pdf");
         })
     }
 
