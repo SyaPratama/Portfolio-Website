@@ -8,14 +8,6 @@ import axios from "axios";
 import fileDownload from 'js-file-download';
 
 const NavbarLayout = ({nav}) => {
-    const download = async () => {
-        await axios.get(`https://git-link.vercel.app/api/download?url=https%3A%2F%2Fgithub.com%2FSyaPratama%2FMyCV%2Fblob%2Fmain%2FRasya.pdf&filename=Rasya.pdf`,{
-            responseType: 'blob'
-        }).then(res => {
-            fileDownload(res.data,"Rasya.pdf");
-        })
-    }
-
     const openNavbar = () => {
         const link = document.querySelector('.navbar-container');
         const bars = document.querySelector('.bars');
@@ -77,7 +69,7 @@ const NavbarLayout = ({nav}) => {
                         <span className="link-name">Portfolio</span>
                         <div className='name-display'>Portfolio</div>
                     </Link>
-                    <Link onClick={download} className="link">
+                    <Link to={"https://git-link.vercel.app/api/download?url=https%3A%2F%2Fgithub.com%2FSyaPratama%2FMyCV%2Fblob%2Fmain%2FRasya.pdf&filename=Rasya.pdf"} className="link">
                         <i className="fa-solid fa-file"></i>
                         <span className="link-name">CV</span>
                         <div className='name-display'>CV</div>
