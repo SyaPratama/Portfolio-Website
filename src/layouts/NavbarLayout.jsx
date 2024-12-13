@@ -12,7 +12,7 @@ const NavbarLayout = ({nav}) => {
         axios.get(`https://drive.google.com/file/d/1ZJqa0dgBXKbduoR1iIMWSsshyLAHR8yI/view?usp=drivesdk`,{
             responseType: 'blob'
         }).then(res => {
-          fileDownload(res.data, "RasyaCV.pdf");
+          fileDownload(res.data, "RasyaCV");
         })
     }
 
