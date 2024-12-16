@@ -163,6 +163,7 @@
     color:  var(--white-color);
     font-size: 14px;
     font-weight: bold;
+    text-decoration: none;
     display: none;
 }
 
@@ -274,6 +275,249 @@
     color: var(--second-color);
 }
 
+.about-container{
+    width: 100%;
+    margin: 3rem;
+    color: var(--white-color);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.gap:not(:last-child){
+    margin-bottom: 5rem;
+}
+
+.about,
+.pendidikan,
+.skill,
+.experience{
+    width: 100%;
+    height: 100%;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-picture
+{
+    border-radius: 20px;
+    object-fit: cover;
+    background: var(--fourth-color);
+    width: 40%;
+    height: 90%;
+    background-image: url('./assets/my-foto.png');
+    background-position: center;
+    background-size: cover ;
+    background-clip: content-box;
+}
+
+.pendidikan-picture{
+    border-radius: 20px;
+    object-fit: cover;
+    background: var(--fourth-color);
+    width: 45%;
+    height: 90%;
+    background-image: url('./assets/study.jpg');
+    filter: grayscale(0.8);
+    background-position: center;
+    background-size: cover ;
+    background-clip: content-box;
+}
+
+.skill-picture{
+    border-radius: 20px;
+    object-fit: cover;
+    background: var(--fourth-color);
+    width: 45%;
+    height: 90%;
+    background-image: url('./assets/skill.jpg');
+    filter: grayscale(0.8);
+    background-position: center;
+    background-size: cover ;
+    background-clip: content-box;
+}
+
+.experience-picture{
+    border-radius: 20px;
+    object-fit: cover;
+    background: var(--fourth-color);
+    width: 45%;
+    height: 90%;
+    background-image: url('./assets/pengalaman.jpg');
+    filter: grayscale(0.8);
+    background-position: center;
+    background-size: cover ;
+    background-clip: content-box;
+}
+
+.introduce{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.introduce p{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.introduce h1{
+    font-size: 2rem;
+}
+
+
+.pendidikan .introduce ul li{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.pendidikan .introduce ul li span:first-child{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.wrap h3{
+    font-weight: 400;
+}
+
+.skill-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.chart{
+    position: relative;
+    margin-top: 10px;
+    width: 90%;
+    border: 4px solid #202020;
+    height: 25px;
+    border-radius: 15px;
+    z-index: 99;
+}
+
+.persent{
+    position: absolute;
+    top: 3.5px;
+    left: 10px;
+    color: var(--third-color);
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 99;
+}
+
+.web-chart::after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 95%;
+    height: inherit;
+    border-radius: inherit;
+    content: "";
+    background: #dbdbdb;
+}
+
+.game-chart::after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 50%;
+    height: inherit;
+    border-radius: inherit;
+    content: "";
+    background: #dbdbdb;
+}
+
+.iot-chart::after
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 30%;
+    height: inherit;
+    border-radius: inherit;
+    content: "";
+    background: #dbdbdb;
+}
+
+.container-porto
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container-porto h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.grid{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 220px 220px 220px 220px;
+    gap: 20px;
+}
+
+.wrapper{
+    position: relative;
+    width: 220px;
+    height: 220px;
+}
+
+.wrapper:hover .slide-content{
+    height: 100%;
+}
+
+
+.slide-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: rgba(0, 0, 0, .8);
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    transition: height .6s ease;
+    text-align: center;
+}
+
+.slide-content p {
+    font-size: 13px;
+}
+
+
+.wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 @media screen and (min-width:320px) and (max-width:768px){
     *{
         scroll-behavior: smooth;
@@ -321,5 +565,67 @@
 
     .main .h1{
         margin-left: 10%;
+    }
+
+    .about-container{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        margin-left: 2rem;
+    }
+
+    .introduce{
+        display: flex;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+    }
+
+    .chart{
+        width: 90%;
+    }
+
+    .about,.pendidikan,.skill,.experience{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        gap: 2rem;
+        text-align: center;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+    }
+
+    .gap:last-child{
+        margin-bottom: 1rem;
+    }
+
+    .gap:first-child{
+        margin-top: 4rem;
+    }
+
+    .pendidikan,.experience{
+        flex-direction: column-reverse;
+    }
+
+    .my-picture,.pendidikan-picture,.skill-picture,.experience-picture{
+        width: 200px;
+        height: 350px;
+    }
+    .container-porto{
+        margin-left: 2rem;
+    }
+
+    .grid{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 120px 120px;
+        gap: 20px;
+    }
+
+    .wrapper{
+        position: relative;
+        width: 100%;
+        height: 120px;
     }
 }

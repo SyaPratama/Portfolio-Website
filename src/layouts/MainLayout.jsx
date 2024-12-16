@@ -15,7 +15,7 @@ const MainLayout = () => {
                         <Link className='icon' to={'https://www.instagram.com/hiyaaaaayam/'}>
                             <i className="fa-brands fa-instagram"></i>
                         </Link>
-                        <Link className='icon' to={'https://github.com/RasyaPrtma'}>
+                        <Link className='icon' to={'https://github.com/SyaPratama'}>
                         <i className="fa-brands fa-github"></i>
                         </Link>
                         <Link className='icon' to={'https://www.linkedin.com/in/rasya-pratama-880bbb253/'}>

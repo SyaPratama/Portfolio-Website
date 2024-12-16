@@ -75,7 +75,7 @@ const NavbarLayout = ({nav}) => {
                         <div className='name-display'>CV</div>
                     </Link>
                 </nav>
-               <Link to={"https://www.linkedin.com/in/rasya-pratama-880bbb253/"}>
+               <Link style={{textDecoration:"none"}} to={"https://www.linkedin.com/in/rasya-pratama-880bbb253/"}>
                 <div className="my-profile">
                     <img src={me} alt="me" className='my-img' />
                     <span className='my-image-name'>Rasya Putra Pratama</span>
